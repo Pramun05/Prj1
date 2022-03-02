@@ -20,5 +20,12 @@ namespace Prj1
             return a - b;
               
         }
+
+        public int Positive(int a)
+        {
+            if (a < 0)
+                throw new ArgumentException("a is negative");
+            return a;
+        }
     }
 }
